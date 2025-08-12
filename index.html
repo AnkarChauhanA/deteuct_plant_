@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantDoc - AI Plant Disease Detection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 PlantDoc</h1>
+        <p class="subtitle">AI-Powered Plant Disease Detection</p>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="lens-icon" id="lensIcon">
+                <div class="lens-circle"></div>
+                <div class="lens-handle"></div>
+            </div>
+            <div class="upload-text">Click the lens or drag & drop your plant image</div>
+            <div class="upload-subtext">Supports JPG, PNG, WebP formats • Max 10MB</div>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+
+        <img id="imagePreview" class="image-preview" alt="Plant image preview">
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p style="margin-top: 15px; color: #7f8c8d;">Analyzing your plant image...</p>
+        </div>
+
+        <button class="analyze-btn" id="analyzeBtn">🔍 Analyze Plant Health</button>
+        <button class="reset-btn" id="resetBtn">📤 Upload New Image</button>
+
+        <div class="result-container" id="resultContainer">
+            <div class="result-title" id="resultTitle">
+                <div class="status-icon" id="statusIcon">✓</div>
+                <span id="resultText">Analysis Results</span>
+            </div>
+            
+            <div class="disease-info" id="diseaseInfo">
+                <div class="disease-name" id="diseaseName">Plant Status</div>
+                <div class="confidence" id="confidence">Confidence: 95%</div>
+                
+                <div class="symptoms">
+                    <h4>🔍 Key Findings:</h4>
+                    <p id="symptomsText">Analysis details will appear here...</p>
+                </div>
+                
+                <div class="treatment">
+                    <h4>💡 Recommendations:</h4>
+                    <p id="treatmentText">Treatment recommendations will appear here...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🤖</div>
+                <h3>AI-Powered Analysis</h3>
+                <p>Advanced machine learning algorithms trained on thousands of plant disease images</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Results</h3>
+                <p>Get immediate diagnosis and treatment recommendations in seconds</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌿</div>
+                <h3>Multiple Plant Types</h3>
+                <p>Supports vegetables, fruits, flowers, and houseplants disease detection</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
